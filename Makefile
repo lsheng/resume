@@ -1,16 +1,16 @@
-all: resume.html resume.pdf resume.docx resume.txt
+all: lsheng-resume.html lsheng-resume.pdf lsheng-resume.docx lsheng-resume.txt
 
-resume.html: resume.md style.css
-	pandoc --standalone -c style.css --from markdown --to html -o resume.html resume.md
+lsheng-resume.html: lsheng-resume.md style.css
+	pandoc --standalone -c style.css --from markdown --to html -o lsheng-resume.html lsheng-resume.md
 
-resume.pdf: resume.html
-	wkhtmltopdf resume.html resume.pdf
+lsheng-resume.pdf: lsheng-resume.html
+	wkhtmltopdf lsheng-resume.html lsheng-resume.pdf
 
-resume.docx: resume.md
-	pandoc --from markdown --to docx -o resume.docx resume.md
+lsheng-resume.docx: lsheng-resume.md
+	pandoc --from markdown --to docx -o lsheng-resume.docx lsheng-resume.md
 
-resume.txt: resume.md
-	pandoc --standalone --smart --from markdown --to plain -o resume.txt resume.md
+lsheng-resume.txt: lsheng-resume.md
+	pandoc --standalone --smart --from markdown --to plain -o lsheng-resume.txt lsheng-resume.md
 
 clean:
 	rm -f *.html *.pdf *.docx *.txt
