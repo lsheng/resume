@@ -82,4 +82,4 @@ Education
 
 ----
 
-> <lsheng@bogosort.org> • 202-905-2823 • [github.com/lsheng](http://github.com/lsheng)
+> <lsheng@bogosort.com> • 202-905-2823 • [github.com/lsheng](http://github.com/lsheng)
